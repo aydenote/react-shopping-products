@@ -7790,7 +7790,7 @@ const ItemCard = ({ id: id2, imageUrl, name, price, isCart, cartInfo, fetchCartP
             fetchCartProducts();
           },
           children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("img", { className: S$3.cartImg, src: "/images/remove-cart.svg", alt: "장바구니 제거" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("img", { className: S$3.cartImg, src: "./images/remove-cart.svg", alt: "장바구니 제거" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "빼기" })
           ]
         }
@@ -7803,7 +7803,7 @@ const ItemCard = ({ id: id2, imageUrl, name, price, isCart, cartInfo, fetchCartP
             fetchCartProducts();
           },
           children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("img", { className: S$3.cartImg, src: "/images/add-cart.svg", alt: "장바구니 추가" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("img", { className: S$3.cartImg, src: "./images/add-cart.svg", alt: "장바구니 추가" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "담기" })
           ]
         }
