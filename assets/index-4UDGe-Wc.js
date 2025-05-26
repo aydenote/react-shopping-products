@@ -8673,7 +8673,18 @@ const S$1 = {
 const CartItem = ({ product }) => {
   const { updateCartItem } = useCartState();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: S$1.cartContainer, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: product.imageUrl, alt: "상품 이미지", className: S$1.cartImg }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "img",
+      {
+        src: product.imageUrl,
+        alt: "상품 이미지",
+        className: S$1.cartImg,
+        onError: (e2) => {
+          const target = e2.target;
+          target.src = "./images/default-image.png";
+        }
+      }
+    ),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: S$1.cartInfo, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: S$1.productName, children: product.name }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: S$1.productPrice, children: [
