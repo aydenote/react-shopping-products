@@ -8673,7 +8673,7 @@ const S$1 = {
 const CartItem = ({ product }) => {
   const { updateCartItem } = useCartState();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: S$1.cartContainer, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "https://velog.velcdn.com/images/minsungje/post/c27c57cb-fcbb-4641-b72d-0e2030739ae7/image.jpg", alt: "상품 이미지", className: S$1.cartImg }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: product.imageUrl, alt: "상품 이미지", className: S$1.cartImg }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: S$1.cartInfo, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: S$1.productName, children: product.name }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: S$1.productPrice, children: [
